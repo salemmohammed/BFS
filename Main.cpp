@@ -4,8 +4,10 @@
 using namespace std;
 
 int main(){
-
-	Graph obj(4);
+	int n;
+	cout << "Enter the number of vertex " << endl;
+	cin>> n;
+	Graph obj(n);
 	
 	obj.add_edge(0,1);
 	obj.add_edge(0,2);
@@ -13,8 +15,11 @@ int main(){
 	obj.add_edge(2,0);
 	obj.add_edge(2,3);
 	obj.add_edge(3,3);
-	cout << " start BSF " << endl; 
-	obj.BSF(2);
+	
+	int v;
+	cout << " start BSF from which vetex " << endl; 
+	cin >>  v;
+	obj.BSF(v);
 
 	return 0;
 }
